@@ -15,6 +15,7 @@
 		6F52BA7E1C4754FA005855F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F52BA7C1C4754FA005855F4 /* LaunchScreen.storyboard */; };
 		6F52BA891C4754FA005855F4 /* YNoDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F52BA881C4754FA005855F4 /* YNoDataTests.m */; };
 		6F52BA941C4754FA005855F4 /* YNoDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F52BA931C4754FA005855F4 /* YNoDataUITests.m */; };
+		6F52BAA31C47552E005855F4 /* UIViewController+NOData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F52BAA21C47552E005855F4 /* UIViewController+NOData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		6F52BA8F1C4754FA005855F4 /* YNoDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNoDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F52BA931C4754FA005855F4 /* YNoDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YNoDataUITests.m; sourceTree = "<group>"; };
 		6F52BA951C4754FA005855F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F52BAA11C47552E005855F4 /* UIViewController+NOData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+NOData.h"; path = "YNoData/UIViewController+NOData.h"; sourceTree = "<group>"; };
+		6F52BAA21C47552E005855F4 /* UIViewController+NOData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+NOData.m"; path = "YNoData/UIViewController+NOData.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		6F52BA6D1C4754FA005855F4 /* YNoData */ = {
 			isa = PBXGroup;
 			children = (
+				6F52BAA11C47552E005855F4 /* UIViewController+NOData.h */,
+				6F52BAA21C47552E005855F4 /* UIViewController+NOData.m */,
 				6F52BA711C4754FA005855F4 /* AppDelegate.h */,
 				6F52BA721C4754FA005855F4 /* AppDelegate.m */,
 				6F52BA741C4754FA005855F4 /* ViewController.h */,
@@ -273,6 +278,7 @@
 				6F52BA761C4754FA005855F4 /* ViewController.m in Sources */,
 				6F52BA731C4754FA005855F4 /* AppDelegate.m in Sources */,
 				6F52BA701C4754FA005855F4 /* main.m in Sources */,
+				6F52BAA31C47552E005855F4 /* UIViewController+NOData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

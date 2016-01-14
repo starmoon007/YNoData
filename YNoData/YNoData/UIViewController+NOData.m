@@ -45,10 +45,13 @@ static UIView *tipsView = nil;
     if ([noDataTipsView isKindOfClass:[UIView class]]){
         return noDataTipsView;
     }
-    noDataTipsView = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    noDataTipsView.backgroundColor = [UIColor redColor];
-    [self setNoDataTipsView:noDataTipsView];
-    return noDataTipsView;
+    CGRect bounds = self.view.bounds;
+    
+    UILabel *noDataTipsLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, (bounds.size.height - 300) * 0.5, bounds.size.width, 300)];
+    noDataTipsLabel.textAlignment = NSTextAlignmentCenter;
+    noDataTipsLabel.text = @"NO Data";
+    [self setNoDataTipsView:noDataTipsLabel];
+    return noDataTipsLabel;
 }
 
 - (void)setNoDataTipsView:(UIView *)noDataTipsView{
@@ -56,7 +59,7 @@ static UIView *tipsView = nil;
     noDataTipsView.userInteractionEnabled = YES;
     noDataTipsView.hidden = YES;
     [noDataTipsView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)]];
-    [self.view addSubview:noDataTipsView];
+    [self.view insertSubview:noDataTipsView atIndex:0];
 }
 
 #pragma mark - Property callBack

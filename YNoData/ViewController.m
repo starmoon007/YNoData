@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIViewController+NOData.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    [self setNoDataCallBack:^{
+        NSLog(@"这个是点击没有数据View的回调方法");
+    }];
+    
+    self.showNoDataTips = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
